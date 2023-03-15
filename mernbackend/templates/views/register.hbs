@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
+    <style>
+      .bg-color{
+          background-color: #f9fbfd;
+          font-family: Arial, Helvetica, sans-serif;
+      }
+      .btn-rounded{
+          border-radius: 30px;
+      }
+</style>
+</head>
+  {{!-- <body>
+       <form action="/registration" method="post">
+         <div class="row register-form">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="name" class="form-label">Enter name</label>
+                    <input type="text" class="form-control" placeholder="first name" value="" name="firstname"/>
+
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Enter Email</label>
+                    <input type="email" class="form-control" placeholder="Your Email" value="" name="email"/>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="phone" class="form-label">Enter Phone Number</label>
+                    <input type="text" minlength="10" name="phone" class="form-control" placeholder="Your Phone *" value="">
+
+                </div>
+                <div class="form-group">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" placeholder="Password *" value="" name="password"/> 
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="lastname" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" placeholder="Last Name *" value="" name="lastname"/>
+                </div>
+                <div class="form-group">
+                    <div class="maxl">
+                        <label class="radio inline">
+                            <input type="radio" name="gender" value="male" checked>
+                            <span>Male</span>
+                        </label>
+                        <label class="radio inline" for="gender">
+                            <input type="radio" name="gender" value="female">
+                            <span>Female</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group" for="gender">
+                    <input type="text" class="form-control" placeholder=" Enter your age *" value="" name="age">
+
+                </div>
+                <div class="form-group" >
+                    <label for="password" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" placeholder="Confirm Password *" value="" name="confirmpassword"> 
+                </div>
+
+                <input type="submit" class="btnRegister" value="Register"/>
+            </div>
+         </div>
+       
+       
+       </form>
+
+
+
+
+
+
+
+
+  </body> --}}
+
+
+
+
+     <body class="bg-color">
+    <section class="container mt-5">
+        <div class="row justify-content-md-center">
+            <form  action="../views/register.hbs" class="col-md-6 col-sm-12 bg-white p-5 rounded shadow" method="POST">
+                <div class="col-12 text-center">
+                    <h3 class="text-primary"><strong>Register Now</strong></h3>
+                </div>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" placeholder="First Name +" value="" name="firstname"/>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your email +" value="" name="email" />
+                </div>
+                <div class="mb-3">
+                    <label for="mobile" class="form-label">Phone Number</label>
+                    <input type="text" minlength="10" maxlength="10" name="phone" class="form-group" placeholder="Your Phone +" value=""/>
+                </div>
+                <div class="mb-3">
+                    <div class="">
+                        <label class="radio inline">
+                            <input type="radio" name="gender" value="male" checked><span>Male</span>
+                        </label>
+                         <label class="radio inline">
+                            <input type="radio" name="gender" value="female" checked><span>Male</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password">
+                </div>
+                <div class="mb-3">
+                    <label for="confirm_password" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirm_password">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="terms">
+                    <label class="form-check-label" for="terms">I agree terms and conditions.</label>
+                </div>
+                <div class="text-center mb-3">
+                    <button type="submit" class="btn btn-primary btn-rounded w-75">Register Now</button>
+                </div>
+                <div class="mb-3 text-center text-secondary mt-3">
+                    or register using
+                </div>
+                <div class="d-flex justify-content-around mb-3">
+                    <button type="submit" class="btn btn-danger btn-rounded"><i class="bi bi-google"></i>&nbsp;&nbsp;Google</button>
+                    <button type="submit" class="btn btn-primary btn-rounded"><i class="bi bi-facebook"></i>&nbsp;&nbsp;Facebook</button>
+                    <button type="submit" class="btn btn-primary btn-rounded"><i class="bi bi-linkedin"></i>&nbsp;&nbsp;Linkedin</button>
+                </div>
+            </form> 
+        </div>
+    </section>
+</body>
+    
+
+</html>
